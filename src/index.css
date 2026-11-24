@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F5F9F0;
+  --color-cream-dark: #E8F0E0;
+  --color-pistachio: #D4E8C4;
+  --color-purple: #4A2C6F;
+  --color-purple-dark: #2D1B3D;
+  --color-purple-light: #D4C4E8;
+  --color-charcoal: #2D1B3D;
+}
+
+body {
+  background-color: #F5F9F0;
+  color: #2D1B3D;
+  font-family: 'Georgia', serif;
+}
+
+.glitter-bg {
+  background: linear-gradient(135deg, #F5F9F0 0%, #E8F0E0 50%, #F5F9F0 100%);
+  background-size: 200% 200%;
+  animation: shimmer 10s ease infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
